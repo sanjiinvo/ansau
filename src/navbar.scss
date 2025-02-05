@@ -1,0 +1,87 @@
+$textcolor:#000;
+// Основные цвета
+$white: #ffffff;         // Чистый белый
+$marsala: #964F4C;       // Бордо (Марсала)
+$cherry-red: #B22222;    // Вишнево-красный
+$gold: #D4AF37;          // Золото
+$copper: #B87333;        // Медный
+
+// Дополнительные цвета
+$dark-marsala: darken($marsala, 10%);
+$light-gold: lighten($gold, 15%);
+
+.navbar{
+    padding: 0;
+    margin: auto;
+    width: 80%;
+    margin-top: 0.5vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+    .menu-desc{
+        width: 40%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        .desk-menu-list{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            li{
+                list-style: none;
+                a{
+                    color: black;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .buttons-bar{
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        .soc-buttons{
+            margin: 0;
+            padding: 0;
+            width: 60%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            li{
+                list-style: none;
+                margin: auto;
+                text-align: center;
+                a{
+                    vertical-align: middle;
+                    color: $textcolor;
+
+                    text-decoration: none;
+                  }
+                  
+            }
+
+        }
+    }
+    .sub-button{
+        padding: 8px 12px;
+        border: none;
+        border-radius: 4px;
+        background-color: $dark-marsala;
+        color: white;
+    }
+}
+.logo{
+    width: 10%;
+}
