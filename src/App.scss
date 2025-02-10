@@ -27,6 +27,7 @@ $copper: #B87333;        // Медный
   background-color: white;
   // padding: 1vh;
   border-radius: 20px;
+  
 }
 .location_tittle{
   font-size: 2.2vw;
@@ -39,6 +40,40 @@ $copper: #B87333;        // Медный
   text-align: center;
 }
 .vision{
+  font-size: 1.8vw;
+  padding: 1vw;
+  background-color: white;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  .vision_3d{
+    width: 60%;
+    height: 70vh;
+
+  }
+
+
+}
+.vision_road_box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 70vh;
+}
+.vision_road{
   width: 100%;
-  
+  display: flex;
+  justify-content: space-between;
+  gap: 1vw;
+  height: 100%;
+  align-items: flex-end;
+}
+.vision_road_tittle{
+  color: $cherry-red;
+  font-family: 1.5rem;
+  font-weight: bold;
+  font-style: italic;
+  margin-top: 5vh;
 }

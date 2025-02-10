@@ -1,0 +1,46 @@
+.carousel-wrapper-v {
+    width: 14vw;
+    height: 55vh;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .carousel-container-v {
+    display: flex;
+    flex-direction: column;
+    animation: scroll linear infinite;
+  }
+  
+  /* Используем переменную времени анимации */
+  @keyframes scroll {
+    from {
+      transform: translateY(0);
+    }
+    to {
+      transform: translateY(-50%);
+    }
+  }
+  .carousel-item-v {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 5vh;
+  }
+  
+  .card-info-v {
+    padding: 15%;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .card_tittle {
+    font-weight: bold;
+  }
+  

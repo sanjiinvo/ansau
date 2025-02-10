@@ -9,7 +9,7 @@ $copper: #B87333;        // Медный
 .info{
     margin-top: 3vh;
     background-color: white;
-    border-radius: 5% 20px 0 0;
+    border-radius: 5% 20px 20px 5%;
     width: 80%;
     display: flex;
     flex-direction: row;
@@ -53,7 +53,7 @@ $copper: #B87333;        // Медный
     }
 }
 .info_pict_img{
-    object-fit: contain;
+    // object-fit: contain;
     width: 50%;
     border-radius: 5%;
 }
