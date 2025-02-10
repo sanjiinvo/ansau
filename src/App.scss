@@ -1,0 +1,44 @@
+$textcolor:#000;
+// Основные цвета
+$white: #ffffff;         // Чистый белый
+$marsala: #964F4C;       // Бордо (Марсала)
+$cherry-red: #B22222;    // Вишнево-красный
+$gold: #D4AF37;          // Золото
+$copper: #B87333;        // Медный
+
+.App {
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(206, 206, 206);
+}
+
+.location_2gis{
+  width: 80%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  // padding: 1vh;
+  border-radius: 20px;
+}
+.location_tittle{
+  font-size: 2.2vw;
+  font-weight: bold;
+  color:$cherry-red ;
+  font-style: italic;
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+.vision{
+  width: 100%;
+  
+}

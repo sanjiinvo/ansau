@@ -1,0 +1,59 @@
+$textcolor:#000;
+// Основные цвета
+$white: #ffffff;         // Чистый белый
+$marsala: #964F4C;       // Бордо (Марсала)
+$cherry-red: #B22222;    // Вишнево-красный
+$gold: #D4AF37;          // Золото
+$copper: #B87333;        // Медный
+
+.info{
+    margin-top: 3vh;
+    background-color: white;
+    border-radius: 5% 20px 0 0;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1vw;
+    height: 100%;
+    .info_left{
+        width: 50%;
+        border-radius: 18px;
+    }
+
+    .info_right{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: start;
+        padding-right: 1vw;
+        
+        .info_tittle {
+            font-size: 2.2vw;
+            font-weight: bold;
+            color:$cherry-red ;
+            font-style: italic;
+            font-family: 'Courier New', Courier, monospace;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .info_text{
+            padding: 0;
+            margin: 0;
+            font-size: 1.2rem;
+            color: $textcolor;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            line-height: 1.5;
+            margin-top: 1vh;
+            text-align: center;
+        }
+    }
+}
+.info_pict_img{
+    object-fit: contain;
+    width: 50%;
+    border-radius: 5%;
+}

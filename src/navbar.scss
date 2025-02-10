@@ -9,16 +9,27 @@ $copper: #B87333;        // Медный
 // Дополнительные цвета
 $dark-marsala: darken($marsala, 10%);
 $light-gold: lighten($gold, 15%);
-
+.header{
+    background: $marsala;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
 .navbar{
-    padding: 0;
     margin: auto;
     width: 80%;
-    margin-top: 0.5vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    // background: white;
 
 
 
@@ -83,5 +94,5 @@ $light-gold: lighten($gold, 15%);
     }
 }
 .logo{
-    width: 10%;
+    width: 12%;
 }

@@ -7,6 +7,7 @@ const Navbarhead = ()=>{
 
 
     return(
+        <div className="header">
         <div className="navbar">
             <menu className="menu-desc">
                 <ul className="desk-menu-list">
@@ -43,6 +44,7 @@ const Navbarhead = ()=>{
                     Оставить заявку
                 </button>
             </div>
+        </div>
         </div>
     )
 }
