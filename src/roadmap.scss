@@ -1,0 +1,146 @@
+$textcolor:#000;
+// Основные цвета
+$white: #ffffff;         // Чистый белый
+$marsala: #964F4C;       // Бордо (Марсала)
+$cherry-red: #B22222;    // Вишнево-красный
+$gold: #D4AF37;          // Золото
+$copper: #B87333;        // Медный
+
+
+// .roadmaps{
+//     background: grey;
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     width: 80vw;
+
+//     .roadmap_box{
+//         display: flex;
+//         justify-content: center;
+
+//         .roadmap_left{
+//             width: 70%;
+//         }
+//         .roadmap_right{
+//             display: flex;
+//             flex-direction: column;
+
+//             .cards-group-button{
+//                 margin-top: 0.5vh;
+//                 background-color: gold;
+//                 border-radius: 18px;
+//                 height: 80px;
+//                 width: 17vw;
+//                 display: flex;
+//                 flex-direction: column;
+//                 align-items: center;
+//                 justify-content: center;
+
+//             }
+//         }
+//     }
+
+// }
+.roadmaps {
+    text-align: center;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 45vh;
+  }
+  
+  .roadmap_box {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    gap: 20px;
+    max-width: 80%;
+  }
+  
+  .roadmap_right {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 20vw;
+  }
+  
+  .cards-group-button {
+    cursor: pointer;
+    padding: 10px;
+    background: #eee;
+    border-radius: 5px;
+    text-align: center;
+    transition: 0.3s;
+  }
+  
+  .cards-group-button:hover, .cards-group-button.active {
+    background: brown;
+    color: white;
+  }
+  
+  .roadmap_left {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    width: 80vw;
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+    // overflow: scroll;
+
+  }
+  
+  .roadmap_card {
+    width: 100%;
+    background: #f9f9f9;
+    border-radius: 5px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 14vw;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition: transform 0.2s ease-in-out;
+
+    // &::before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     width: 100%;
+    //     height: 100%;
+    //     background: rgba(0, 0, 0, 0.8); // Затемнение (0.4 - можно менять)
+    //     z-index: 1;
+    //   }
+  }
+  .roadmap_card:hover {
+    transform: scale(1.2);
+  }
+  .card_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 1%;
+  }
+  .fade-out {
+    opacity: 0;
+  }
+  
+  .fade-in {
+    opacity: 1;
+  }
+  .dark_layout{
+    background-color: rgba(0, 0, 0, 0.3);
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  .card_range_range{
+    text-wrap: nowrap;
+  }

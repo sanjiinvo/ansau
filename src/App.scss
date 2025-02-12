@@ -14,7 +14,7 @@ $copper: #B87333;        // Медный
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgb(206, 206, 206);
+  // background-color: rgb(206, 206, 206);
 }
 
 .location_2gis{
@@ -48,12 +48,11 @@ $copper: #B87333;        // Медный
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  .vision_3d{
-    width: 60%;
-    height: 70vh;
 
-  }
-
+}
+.vision_3d{
+  width: 100%;
+  height: 80vh;
 
 }
 .vision_road_box{

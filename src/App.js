@@ -7,6 +7,7 @@ import Info from './info';
 import { useEffect } from 'react';
 import Uniq from './uniq';
 import VerticalCarousel from './swip';
+import RoadMaps from './roadmaps';
 
 var DG = require('2gis-maps');
 function App() {
@@ -65,15 +66,17 @@ function App() {
       <FirstSlider/>
       <Info/>
       {/* <Uniq/> */}
-      <div className='location_2gis mt-5 pb-3'>
-        <p className='location_tittle'>Расположение</p>
+      {/* <div className='location_2gis mt-5 pb-3'> */}
+        {/* <p className='location_tittle'>Расположение</p> */}
         {/* <LocationMap/> */}
-        <div id="ansaumap" style={{width:'75vw', height:'50vh'}}></div>
-      </div>
-      <div className='vision mt-5'>
-        <div className='vision_3d'>
-        <iframe src='https://astana3d.kz/3d/nak/ansau/#pano548173/75.4/14.5/43.3' style={{width:'100%', height:'70vh'}}></iframe>
+        {/* <div id="ansaumap" style={{width:'75vw', height:'50vh'}}></div> */}
+      {/* </div> */}
+      <div className='vision_3d'>
+        <iframe src='https://astana3d.kz/3d/nak/ansau/#pano548173/75.4/14.5/43.3' style={{width:'100%', height:'80vh'}}></iframe>
         </div>
+        <RoadMaps/>
+      <div className='vision mt-5'>
+
         <div className='vision_road_box'>
           <p className='vision_road_tittle'>Время в пути</p>
         <div className='vision_road'>
