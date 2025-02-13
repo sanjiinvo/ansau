@@ -7,22 +7,23 @@ $gold: #D4AF37;          // Золото
 $copper: #B87333;        // Медный
 
 .info{
-    margin-top: 3vh;
     background-color: white;
     border-radius: 5% 20px 20px 5%;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     gap: 1vw;
-    height: 100%;
+    height: 70vh;
+    position: relative;
+    top: -15vh;
     .info_left{
         width: 50%;
         border-radius: 18px;
     }
 
     .info_right{
-        width: 50%;
+        width: 45%;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -34,11 +35,13 @@ $copper: #B87333;        // Медный
             font-size: 2.2vw;
             font-weight: bold;
             color:$cherry-red ;
-            font-style: italic;
-            font-family: 'Courier New', Courier, monospace;
+            // font-style: italic;
+            // font-family: ;
             padding: 0;
             margin: 0;
             text-align: center;
+            align-self: flex-start;
+            text-align: start;
         }
         .info_text{
             padding: 0;
@@ -48,7 +51,7 @@ $copper: #B87333;        // Медный
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             line-height: 1.5;
             margin-top: 1vh;
-            text-align: center;
+            text-align: start;
         }
     }
 }

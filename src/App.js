@@ -8,6 +8,7 @@ import { useEffect } from 'react';
 import Uniq from './uniq';
 import VerticalCarousel from './swip';
 import RoadMaps from './roadmaps';
+import Second_slider from './second_slider';
 
 var DG = require('2gis-maps');
 function App() {
@@ -71,11 +72,14 @@ function App() {
         {/* <LocationMap/> */}
         {/* <div id="ansaumap" style={{width:'75vw', height:'50vh'}}></div> */}
       {/* </div> */}
-      <div className='vision_3d'>
+      <div className='vision_3d mt-3'>
         <iframe src='https://astana3d.kz/3d/nak/ansau/#pano548173/75.4/14.5/43.3' style={{width:'100%', height:'80vh'}}></iframe>
         </div>
         <RoadMaps/>
-      <div className='vision mt-5'>
+
+        <Second_slider/>
+        <Uniq/>
+      {/* <div className='vision mt-3'>
 
         <div className='vision_road_box'>
           <p className='vision_road_tittle'>Время в пути</p>
@@ -85,7 +89,7 @@ function App() {
         </div>
         </div>
 
-      </div>
+      </div> */}
 
     </div>
   );

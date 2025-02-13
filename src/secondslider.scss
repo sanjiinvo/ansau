@@ -1,0 +1,44 @@
+.second_carousel{
+    height: 100vh !important;
+    width: 100%;
+    .second_carousel_item{
+
+    }
+    .second_slider_img{
+        height: 100vh;
+        width: 100%;
+        object-fit: cover;
+    }
+    .second_slider_text{
+        background-color: rgba(0, 0, 0, 0.5);
+        width: 100%;
+        position: absolute;
+        top: 40%;
+    }
+    .custom_slide{
+    }
+}
+.swipe_slide{
+    color: black;
+}
+.swiper-container{
+    width: 100%;
+}
+.swiper_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.swiper_box_textbox{
+ width: 100%;
+ background-color: rgba(0, 0, 0, 0.5);
+ height: 70vh;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-self: center;
+}
+.swiper_box_text{
+    color: white;
+}

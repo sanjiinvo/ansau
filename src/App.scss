@@ -5,7 +5,9 @@ $marsala: #964F4C;       // Бордо (Марсала)
 $cherry-red: #B22222;    // Вишнево-красный
 $gold: #D4AF37;          // Золото
 $copper: #B87333;        // Медный
-
+// *{
+//   border: 5px solid yellow
+// }
 .App {
   text-align: center;
   margin: auto;
@@ -40,6 +42,7 @@ $copper: #B87333;        // Медный
   text-align: center;
 }
 .vision{
+
   font-size: 1.8vw;
   padding: 1vw;
   background-color: white;
@@ -51,6 +54,8 @@ $copper: #B87333;        // Медный
 
 }
 .vision_3d{
+  position: relative;
+  top: -12vh;
   width: 100%;
   height: 80vh;
 

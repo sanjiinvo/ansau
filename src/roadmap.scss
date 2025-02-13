@@ -43,6 +43,8 @@ $copper: #B87333;        // Медный
 
 // }
 .roadmaps {
+    position: relative;
+    top: -12vh;
     text-align: center;
     margin: auto;
     display: flex;
@@ -50,6 +52,7 @@ $copper: #B87333;        // Медный
     justify-content: flex-start;
     align-items: center;
     height: 45vh;
+    width: 100%;
   }
   
   .roadmap_box {

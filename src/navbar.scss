@@ -10,14 +10,16 @@ $copper: #B87333;        // Медный
 $dark-marsala: darken($marsala, 10%);
 $light-gold: lighten($gold, 15%);
 .header{
-    background: $marsala;
+    // background: $marsala;
+    background-color: rgba(0, 0, 0, 0.2);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
+    position: relative;
     top: 0;
-    z-index: 99;
+    z-index: 12;
+    height: 20vh;
 }
 .navbar{
     margin: auto;
@@ -50,8 +52,9 @@ $light-gold: lighten($gold, 15%);
             li{
                 list-style: none;
                 a{
-                    color: black;
+                    color: white;
                     text-decoration: none;
+                    font-size: 1.2rem;
                 }
             }
         }
@@ -76,8 +79,8 @@ $light-gold: lighten($gold, 15%);
                 text-align: center;
                 a{
                     vertical-align: middle;
-                    color: $textcolor;
-
+                    color: white;
+                    font-size: 1.2rem;
                     text-decoration: none;
                   }
                   
@@ -89,10 +92,18 @@ $light-gold: lighten($gold, 15%);
         padding: 8px 12px;
         border: none;
         border-radius: 4px;
-        background-color: $dark-marsala;
+        background-color: rgba(0, 0, 0, 0);
         color: white;
+        border: 4px double white;
+        &:hover{
+            color: black;
+            background-color: rgba(255, 255, 255, 0.5);
+
+            
+        }
     }
 }
 .logo{
     width: 12%;
+    background-blend-mode: overlay;
 }

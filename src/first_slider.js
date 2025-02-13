@@ -14,7 +14,7 @@ const FirstSlider = ()=>{
 
        
         <Carousel fade touch >
-        <Carousel.Item interval={1500}>
+        <Carousel.Item interval={150000}>
           <img className='top_carous_img d-block w-100 h-90' src={top_carousel1}/>
           <Carousel.Caption className='top_carous_text_box'>
             <h3 className='top_carous_img_tittle'>Жилой комплекс «Ansau»</h3>
