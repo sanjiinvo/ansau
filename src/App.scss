@@ -17,6 +17,7 @@ $copper: #B87333;        // Медный
   justify-content: center;
   align-items: center;
   // background-color: rgb(206, 206, 206);
+  
 }
 
 .location_2gis{
@@ -81,3 +82,136 @@ $copper: #B87333;        // Медный
   font-style: italic;
   margin-top: 5vh;
 }
+.submit_form{
+ display: flex;
+ height: 30vh;
+ width: 100%;
+ 
+ background-image: url('./images//secondslider/ss1.jpg');
+ background-position: center center;
+ background-size: cover;
+ background-repeat: no-repeat;
+
+
+
+
+ .submit_form_text_box{
+  text-align: end;
+  padding: 5vw;
+  height: 80%;
+  width: 32vw;
+  color: white;
+  font-size: 1.5vw;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 3px solid white;
+ }
+
+ .input_form_box{
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 2vw;
+   input{
+    width: 20vw;
+    padding: 6px;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+
+   }
+   button   {
+    width: 20vw;
+    padding: 6px;
+    border-radius: 12px;
+    border: none;
+    &:hover{
+      background-color: $cherry-red;
+      color: white;
+      cursor: pointer;
+    }
+   }
+ }
+ .submit_img{
+  border-radius: 16px;
+  width: 15vw;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-image: url('./images/naklogo.png');
+  background-position: center;
+  height: 100%;
+ }
+}
+.dark_layout2{
+  background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.5);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ text-align: center;
+ }
+footer{
+  background-image: url('./images/secondslider/ss2.jpg');
+  // height: 55vh;
+  margin-top: 5vh;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+}
+.dark_layout3{
+  background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.7);
+  position: relative;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+ justify-content: center;
+ flex-direction: column;
+ text-align: center;
+ color: white;
+ padding-bottom: 7vh;
+ padding-top: 5vh;
+
+ }
+ .footer_logo{
+  width: 12vw;
+ }
+ .footer_menu{
+  display: flex;
+  .footer-menu-list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    a{
+      color: white;
+      text-decoration: none;
+    }
+  }
+ }
+ .footer_company_info{
+    display: flex;
+    width: 50%;
+    text-align: start;
+    gap: 2vw;
+ }
+ .footer_nak_logo{
+  width: 15vw;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-image: url('./images/naklogo.png');
+  background-position: center;
+  height: 100%;
+  border-left:  2px solid white;
+  padding: 1vw;
+ }

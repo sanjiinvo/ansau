@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import info_pict from './images/ropted.jpg'
+import info_pict_flip from './images/info_pic_flip.jpg'
 import './info.scss'
 import Uniq from "./uniq";
 const Info =()=>{
+
+    const [imageSrc, setImageSrc] = useState(info_pict);
+
+
     return(
         <div className="info">
             {/* <div className="info_left"> */}
-            <img className="info_pict_img" src={info_pict}/>
+            <img className="info_pict_img" src={imageSrc}
+            />
             {/* </div> */}
             <div className="info_right">
                 <p className="info_tittle tittle">
