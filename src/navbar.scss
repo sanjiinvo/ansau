@@ -9,9 +9,41 @@ $copper: #B87333;        // Медный
 // Дополнительные цвета
 $dark-marsala: darken($marsala, 10%);
 $light-gold: lighten($gold, 15%);
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('./fonts/Mulish-Regular.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-bold';
+    src: url('./fonts/Mulish-Bold.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-Italic';
+    src: url('./fonts/Mulish-BlackItalic.ttf')format('truetype');;
+  }
+  .icon-gradient {
+    // font-size: 50px;
+    background: linear-gradient(45deg, #8f1927, #3a060f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-text {
+    background: linear-gradient(to right, #8f1927, #3a060f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    
+    /* Поддержка для Firefox */
+    -webkit-mask-image: linear-gradient(to right, #8f1927, #3a060f);
+    mask-image: linear-gradient(to right, #8f1927, #3a060f);
+  }
 .header{
     // background: $marsala;
-    background-color: rgba(0, 0, 0, 0.2);
+    // background-color: rgba(255, 255, 255, 0.2);
+    // background-color: rgba(0, 0, 0, 0.0);
+    // background: linear-gradient(to right, #8f1927, #3a060f);
+    background: linear-gradient(to right, rgba(143, 25, 39, 1), rgba(58, 6, 15, 1));
     color: white;
     display: flex;
     justify-content: space-between;
@@ -52,9 +84,11 @@ $light-gold: lighten($gold, 15%);
             li{
                 list-style: none;
                 a{
+                    // @extend .gradient-text;
                     color: white;
                     text-decoration: none;
-                    font-size: 1.2rem;
+                    font-size: 1.3rem;
+                    font-family: 'Mulish-Regular';
                 }
             }
         }
@@ -79,15 +113,42 @@ $light-gold: lighten($gold, 15%);
                 text-align: center;
                 a{
                     vertical-align: middle;
-                    color: white;
-                    font-size: 1.2rem;
                     text-decoration: none;
+                    // @extend .gradient-text;
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.3rem;
+                    font-family: 'Mulish-Regular';
                   }
                   
             }
 
         }
     }
+    // .sub-button {
+    //     padding: 8px 12px;
+    //     border: none;
+    //     border-radius: 4px;
+    //     background: linear-gradient(90deg, #8f1927 0%, #3a060f 100%);
+    //     color: white;
+    //     font-weight: bold;
+    //     text-transform: uppercase;
+    //     letter-spacing: 1px;
+    //     transition: all 0.3s ease-in-out;
+    //     cursor: pointer;
+    //     border: 2px solid transparent;
+        
+    //     &:hover {
+    //         background: linear-gradient(90deg, #3a060f 0%, #8f1927 100%);
+    //         color: #fff;
+    //         border-color: #fff;
+    //         transform: scale(1.05);
+    //     }
+    
+    //     &:active {
+    //         transform: scale(0.95);
+    //     }
+    // }
     .sub-button{
         padding: 8px 12px;
         border: none;

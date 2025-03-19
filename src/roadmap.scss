@@ -1,3 +1,33 @@
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('./fonts/Mulish-Regular.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-bold';
+    src: url('./fonts/Mulish-Bold.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-Italic';
+    src: url('./fonts/Mulish-BlackItalic.ttf')format('truetype');;
+  }
+  .icon-gradient {
+    // font-size: 50px;
+    background: linear-gradient(45deg, #8f1927, #3a060f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-text {
+    background: linear-gradient(to right, #8f1927, #3a060f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    
+    /* Поддержка для Firefox */
+    -webkit-mask-image: linear-gradient(to right, #8f1927, #3a060f);
+    mask-image: linear-gradient(to right, #8f1927, #3a060f);
+  }
+
 $textcolor:#000;
 // Основные цвета
 $white: #ffffff;         // Чистый белый
@@ -77,10 +107,12 @@ $copper: #B87333;        // Медный
     border-radius: 5px;
     text-align: center;
     transition: 0.3s;
+    
   }
   
   .cards-group-button:hover, .cards-group-button.active {
-    background: brown;
+    // background: #8f1927;
+    background: linear-gradient(to right, #8f1927,#85101d, #3a060f);
     color: white;
   }
   

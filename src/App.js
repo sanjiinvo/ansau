@@ -92,7 +92,7 @@ function App() {
           <p className='submit_form_tittle'>
             Есть вопросы?
           </p>
-          <p>
+          <p className='submit_form_tittle_2'>
             Запишись на консультацию
           </p>
           </div>

@@ -17,6 +17,35 @@
 //     font-size: 1.5rem;
 //     margin-bottom: 1vh;
 // }
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('./fonts/Mulish-Regular.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-bold';
+    src: url('./fonts/Mulish-Bold.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-Italic';
+    src: url('./fonts/Mulish-BlackItalic.ttf')format('truetype');;
+  }
+  .icon-gradient {
+    // font-size: 50px;
+    background: linear-gradient(45deg, #8f1927, #3a060f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-text {
+    background: linear-gradient(to right, #8f1927, #3a060f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    
+    /* Поддержка для Firefox */
+    -webkit-mask-image: linear-gradient(to right, #8f1927, #3a060f);
+    mask-image: linear-gradient(to right, #8f1927, #3a060f);
+  }
 .uniq_ansau{
     display: flex;
     align-items: start;
@@ -30,7 +59,7 @@
 .uniq_items{
     max-width: 25%;
     width: 25%;
-    border-right: 1px solid brown;
+    border-right: 1px solid #8f1927;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,7 +72,11 @@
     margin-bottom: 1vh;
     font-weight: bold;
     text-align: center;
+    font-family: 'Mulish-Bold';
+
 }
 .uniq_item_text{
     text-align: center;
+    font-family: 'Mulish-Regular';
+
 }

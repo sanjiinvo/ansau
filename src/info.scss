@@ -5,6 +5,35 @@ $marsala: #964F4C;       // Бордо (Марсала)
 $cherry-red: #B22222;    // Вишнево-красный
 $gold: #D4AF37;          // Золото
 $copper: #B87333;        // Медный
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('./fonts/Mulish-Regular.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-bold';
+    src: url('./fonts/Mulish-Bold.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-Italic';
+    src: url('./fonts/Mulish-BlackItalic.ttf')format('truetype');;
+  }
+  .icon-gradient {
+    // font-size: 50px;
+    background: linear-gradient(45deg, #8f1927, #3a060f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  .gradient-text {
+    background: linear-gradient(to right, #8f1927, #3a060f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    
+    /* Поддержка для Firefox */
+    -webkit-mask-image: linear-gradient(to right, #8f1927, #3a060f);
+    mask-image: linear-gradient(to right, #8f1927, #3a060f);
+  }
 
 .info{
     background-color: white;
@@ -42,6 +71,8 @@ $copper: #B87333;        // Медный
             text-align: center;
             align-self: flex-start;
             text-align: start;
+            @extend .gradient-text;
+            font-family: 'Mulish-Regular';
         }
         .info_text{
             padding: 0;
@@ -52,6 +83,8 @@ $copper: #B87333;        // Медный
             line-height: 1.5;
             margin-top: 1vh;
             text-align: start;
+            font-family: 'Mulish-Bold';
+            
         }
     }
 }
