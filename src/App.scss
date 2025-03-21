@@ -19,7 +19,7 @@ $copper: #B87333;        // Медный
 }
 .icon-gradient {
   // font-size: 50px;
-  background: linear-gradient(to right, #8f1927, #3a060f);
+  background: linear-gradient(to right, #8f1927,  #3a060f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -87,7 +87,7 @@ $copper: #B87333;        // Медный
 }
 .vision_3d{
   position: relative;
-  top: -12vh;
+  // top: -12vh;
   width: 100%;
   height: 80vh;
 
@@ -115,85 +115,110 @@ $copper: #B87333;        // Медный
 }
 .submit_form{
  display: flex;
- height: 30vh;
+ height: 45vh;
  width: 100%;
- 
  background-image: url('./images//secondslider/ss1.jpg');
  background-position: center center;
  background-size: cover;
  background-repeat: no-repeat;
 
 
-
-
- .submit_form_text_box{
-  text-align: end;
-  padding: 5vw;
-  height: 80%;
-  width: 32vw;
-  color: white;
-  font-size: 1.5vw;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-right: 3px solid white;
- }
-.submit_form_tittle{
-  font-family: 'Mulish-Italic';
-}
-.submit_form_tittle_2{
-  font-family: 'Mulish-Italic';
-  font-size: 1.4rem;
-}
- .input_form_box{
-  width: 40vw;
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  padding-left: 2vw;
-   input{
-    width: 20vw;
-    padding: 6px;
-    border-radius: 12px;
-    border: none;
-
-   }
-   button   {
-    width: 20vw;
-    padding: 6px;
-    border-radius: 12px;
-    border: none;
-    &:hover{
-      background-color: #8f1927;
-      color: white;
-      cursor: pointer;
-    }
-   }
- }
- .submit_img{
-  border-radius: 16px;
-  width: 15vw;
-  background-size: auto;
-  background-repeat: no-repeat;
-  background-image: url('./images/naklogo.png');
-  background-position: center;
-  height: 100%;
- }
-}
-.dark_layout2{
+ .dark_layout2{
   background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.5);
   position: relative;
   width: 100%;
   height: 100%;
   z-index: 5;
   display: flex;
+  flex-direction: column;
   align-items: center;
- justify-content: center;
- text-align: center;
+  justify-content: center;
+  text-align: center;
+
+  .bg-wh{
+    display: flex;
+    width: 60%;
+    background: rgba(255, 255, 255, 0.5);
+    height: 60%;
+    border-radius: 25px 25px 0 0;
+    justify-content: center;
+    align-items: first baseline;
+    padding: 2% 3%;
+
+    .submit_form_text_box{
+      text-align: start;
+      font-family: 'Mulish-Regular';
+      width: 50%;
+      height: 100%;
+      .submit_form_tittle{
+        font-size: 2vw;
+      }
+      .submit_form_tittle_2{
+        font-size: 1vw;
+      }
+
+    }
+
+
+    .input_form_box{
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 35%;
+      height: 100%;
+
+      input{
+        width: 100%;
+        padding: 0.5vh;
+        border-radius: 5px;
+        border: none;
+        outline: none;
+        background-color: white;
+        font-size: 1vw;
+        color: white;
+        transition: 0.3s;
+        text-align: center;
+        &:focus{
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+        &::placeholder{
+          font-family: 'Mulish-Regular';
+        }
+      }
+
+      button{
+        background: linear-gradient(to right, #8f1927, #3a060f);
+        outline: none;
+        border: none;
+        border-radius: 5px;
+        padding: 0.5vh;
+        color: white;
+        transition: 0.3s;
+        font-size: 1vw;
+        text-transform: uppercase;
+        font-family: 'Mulish-Bold';
+        &:focus{
+          box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+        }
+      }
+    }
+  }
+  .submit_img{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:1% ;
+    background: linear-gradient(to right, rgba(143, 25, 39, 0.5), rgba(58, 6, 15, 0.5));
+    border-radius: 0 0 25px 24px;
+    img{
+      width: 15%;
+    }
+  }
  }
+}
+
 footer{
   background-image: url('./images/secondslider/ss2.jpg');
   // height: 55vh;
@@ -206,6 +231,7 @@ footer{
 }
 .dark_layout3{
   background-color: rgba($color: rgb(0, 0, 0), $alpha: 0.7);
+  background: white;
   position: relative;
   width: 100%;
   height: 100%;
@@ -213,15 +239,32 @@ footer{
   display: flex;
   align-items: center;
  justify-content: center;
- flex-direction: column;
  text-align: center;
- color: white;
+ color: #861c35;
  padding-bottom: 7vh;
  padding-top: 5vh;
+  .footer_logo_ansau{
+    width: 30%;
+  }
+  .footer_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    text-align: start;
+    font-size: 1.1vw;
+     p{
+      font-family: 'Mulish-Regular';
 
+      span{
+        font-family: 'Mulish-Bold';
+        text-transform: uppercase;
+      }
+     }
+  }
  }
  .footer_logo{
-  width: 12vw;
+  width: 20vw;
  }
  .footer_menu{
   display: flex;
@@ -238,12 +281,13 @@ footer{
  .footer_company_info{
     font-family: 'Mulish-Regular';
     display: flex;
-    width: 50%;
-    text-align: start;
-    gap: 2vw;
+    flex-direction: column;
+    align-items: center;
+    // text-align: start;
+    width: 30%;
  }
  .footer_nak_logo{
-  width: 15vw;
+  width: 12vw;
   background-size: auto;
   background-repeat: no-repeat;
   background-image: url('./images/naklogo.png');

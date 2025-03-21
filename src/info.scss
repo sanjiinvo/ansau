@@ -17,6 +17,10 @@ $copper: #B87333;        // Медный
     font-family: 'Mulish-Italic';
     src: url('./fonts/Mulish-BlackItalic.ttf')format('truetype');;
   }
+  @font-face {
+    font-family: 'Mulish-Light';
+    src: url('./fonts/Mulish-Light.ttf')format('truetype');;
+  }
   .icon-gradient {
     // font-size: 50px;
     background: linear-gradient(45deg, #8f1927, #3a060f);
@@ -39,13 +43,14 @@ $copper: #B87333;        // Медный
     background-color: white;
     border-radius: 5% 20px 20px 5%;
     width: 90%;
+    margin-top: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     gap: 1vw;
     height: 70vh;
     position: relative;
-    top: -15vh;
+    // top: -15vh;
     .info_left{
         width: 50%;
         border-radius: 18px;
@@ -54,7 +59,7 @@ $copper: #B87333;        // Медный
     .info_right{
         width: 45%;
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         align-items: center;
         flex-direction: column;
         text-align: start;
@@ -79,11 +84,10 @@ $copper: #B87333;        // Медный
             margin: 0;
             font-size: 1.2rem;
             color: $textcolor;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             line-height: 1.5;
             margin-top: 1vh;
             text-align: start;
-            font-family: 'Mulish-Bold';
+            font-family: 'Mulish-Regular';
             
         }
     }
@@ -93,4 +97,18 @@ $copper: #B87333;        // Медный
     width: 50%;
     border-radius: 5%;
 
+}
+.info_logo_ansau{
+    align-self: flex-start;
+    width: 40%;
+}
+.sub-button{
+    align-self: flex-start;
+    padding: 6px 2vw;
+    border-radius: 8px;
+    border: none;
+    color: white;
+    font-family: 'Mulish-Light';
+    background: linear-gradient(to right,#8f1927, #8f1927,  #3a060f);
+    text-transform: uppercase;
 }

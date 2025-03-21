@@ -12,6 +12,9 @@ import Second_slider from './second_slider';
 import submit_img from './images/secondslider/ss1.jpg'
 import naklogo from './images/naklogo.png'
 import zhklogo from "./images/Logo.png"
+import info_logo_ansau from './images/logo-ansau-bord.png'
+import logo_nak_bord from './images/logo-nak-bord.png'
+
 
 
 var DG = require('2gis-maps');
@@ -85,61 +88,48 @@ function App() {
         <Uniq/>
         <div className='submit_form'> 
           <div className='dark_layout2'>
-          <div className='submit_img'>
-          </div> 
-          <div className='submit_form_text_box'>
-  
+            <div className='bg-wh'>
+            <div className='submit_form_text_box'>
           <p className='submit_form_tittle'>
             Есть вопросы?
           </p>
           <p className='submit_form_tittle_2'>
-            Запишись на консультацию
+          Чтобы получить подробную консультацию,
+оставьте своё имя и номер телефона,
+и менеджер обязательно свяжется с Вами
           </p>
           </div>
           <div className='input_form_box'>
-            <input type='text' placeholder='Имя'/>
-            <input type='text' placeholder='Телефон'/>
-            <button>Отправить</button>
+            <input type='text' placeholder='Ваше имя'/>
+            <input type='text' placeholder='Ваш телефон'/>
+            <button>оставить заявку</button>
           </div>
+            </div>
+            <div className='submit_img'>
+              <img src={naklogo}/>
+            </div> 
           
           </div>
         </div>
         <footer>
           <div className='dark_layout3'>
-              {/* <div className='footer_menu'>
-                <ul className="footer-menu-list">
-                          <li className="footer-menu-list-item">
-                              <a href="#">О комплексе</a>
-                          </li>
-                          <li className="footer-menu-list-item">
-                              <a href="#">3D Панорама</a>
-                          </li>
-                          <li className="footer-menu-list-item">
-                              <a href="#">Уникальность</a>
-                          </li>
-                          <li className="footer-menu-list-item">
-                              <a href="#">Расположение</a>
-                          </li>
-                      </ul>
-              </div> */}
+            <div className='footer_logo_ansau'>
+            <img className='footer_logo' src={info_logo_ansau}/>
+            </div>
                   <div className='footer_company_info'> 
-                    <img className='footer_nak_logo' src={naklogo}/>
+                    <img className='footer_nak_logo' src={logo_nak_bord}/>
                     <p>ТОО «Нұр Астана Құрылыс» основано в 2006 году и предоставляет услуги в сфере строительства, жилых и коммерческих объектов, бизнес центров, образовательных объектов, социально и культурно значимых объектов, капитального и текущего ремонта с каждым годом повышая свой профессионализм и качество строительства.</p>
               </div>
               <div className='footer_info'>
-              <img className='footer_logo' src={zhklogo}/>
               <p>
-              Телефон: +7 (706) 6 999 500
+                <span>Контакты:</span> <br/> +7 (706) 6 999 500 <br/> +7 7172 999 500
+                <br/><br/>
+              <span>ОФИСы ПРОДАЖ: </span>
+              <br/>
+                г.Астана, ул.Арай 29/А БЦ НАК<br/>
+                г.Астана, Мангилик Ел, 38
               </p>
-              <p>
-              ОФИС ПРОДАЖ: <br/>
-г.Астана, ул.Арай 29/А БЦ НАК<br/>
 
-г.Астана, Мангилик Ел, 38
-              </p>
-              <div className='footer_soc_icons'>
-
-              </div>
               </div>
           </div>
 

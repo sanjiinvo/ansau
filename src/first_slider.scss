@@ -1,6 +1,22 @@
+@font-face {
+    font-family: 'Mulish-Regular';
+    src: url('./fonts/Mulish-Regular.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-bold';
+    src: url('./fonts/Mulish-Bold.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-Italic';
+    src: url('./fonts/Mulish-BlackItalic.ttf')format('truetype');;
+  }
+  @font-face {
+    font-family: 'Mulish-Light';
+    src: url('./fonts/Mulish-Light.ttf')format('truetype');;
+  }
 .top_carousel{
     position: relative;
-    top: -20vh;
+    // top: -20vh;
     // margin-top: 79px !important;
     text-align: center;
     // margin-top: -5vw;
@@ -58,5 +74,38 @@
     color: #d8bd89;
     @media (max-width:400px) {
         font-size: 1rem;
+    }
+}
+.black-layout{
+    position: absolute;
+    z-index: 10;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    width: 35vw;
+    
+
+    .first-slide-info-box{
+        padding: 30% 10%;
+        text-align: start;
+        color: white;
+        font-family: 'Mulish-Light';
+        .first-slide-info-tittle{
+            font-size: 2.4rem;
+            padding: 0;
+            line-height: 20%;
+        }
+        .first-slide-info-text{
+            text-transform: uppercase;
+        }
+        .first-slide-info-button{
+            margin-top: 1vw;
+            padding: 6px 2vw;
+            border-radius: 8px;
+            border: none;
+            color: white;
+            font-family: 'Mulish-Light';
+            background: linear-gradient(to right,#8f1927, #8f1927,  #3a060f);
+            text-transform: uppercase;
+        }
     }
 }
