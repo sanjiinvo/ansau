@@ -46,7 +46,7 @@ const categories = {
         { title: "Драматический театр имени К. Байсеитовой", range: "4 км", walk: 0, time: "8 минут" },
         { title: "Бас Мешит", range: "13 км", walk: 0, time: "25 минут" },
         { title: "Башня \"Байтерек\"", range: "8 км", walk: 0, time: "20 минут" },
-        { title: "Президентский Парк", range: "Не указано", walk: 0, time: "Не указано" }
+        { title: "Президентский Парк", range: "5км", walk: 0, time: "20 минут" }
     ],
   };
   
@@ -68,7 +68,7 @@ const RoadMaps = () =>{
 
 
     return(
-        <div className="roadmaps mt-3">
+        <div className="roadmaps">
         <p className="roadmaps_tittle">Road Maps</p>
         <div className="roadmap_box">
           <div className="roadmap_right">

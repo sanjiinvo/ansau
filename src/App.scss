@@ -1,3 +1,6 @@
+// *{
+//   outline: 2px solid rgb(0, 0, 0);
+// }
 $textcolor:#000;
 // Основные цвета
 $white: #ffffff;         // Чистый белый
@@ -86,6 +89,7 @@ $copper: #B87333;        // Медный
 
 }
 .vision_3d{
+  margin-top: 5vh;
   position: relative;
   // top: -12vh;
   width: 100%;
@@ -210,7 +214,8 @@ $copper: #B87333;        // Медный
     justify-content: center;
     align-items: center;
     padding:1% ;
-    background: linear-gradient(to right, rgba(143, 25, 39, 0.5), rgba(58, 6, 15, 0.5));
+    background: linear-gradient(to right, rgba(143, 25, 39, 0.61), rgba(58, 6, 15, 0.61));
+    background-color: rgba($color: #861c35, $alpha: 0.61);
     border-radius: 0 0 25px 24px;
     img{
       width: 15%;
@@ -220,9 +225,9 @@ $copper: #B87333;        // Медный
 }
 
 footer{
-  background-image: url('./images/secondslider/ss2.jpg');
+  // background-image: url('./images/secondslider/ss2.jpg');
   // height: 55vh;
-  margin-top: 5vh;
+  // margin-top: 5vh;
   width: 100%;
   background-repeat: no-repeat;
   background-position: center center;
@@ -296,3 +301,4 @@ footer{
   border-left:  2px solid white;
   padding: 1vw;
  }
+

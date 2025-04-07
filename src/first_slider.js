@@ -18,6 +18,9 @@ const FirstSlider = ()=>{
                 <button className="first-slide-info-button">
                     Оставить заявку
                 </button>
+                {/* <button className="first-slide-info-button1">
+                    Оставить заявку
+                </button> */}
             </div>
         </div>
        

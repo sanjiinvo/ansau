@@ -77,11 +77,12 @@ $copper: #B87333;        // Медный
     // top: -12vh;
     text-align: center;
     margin: auto;
+    margin-top: 5vh;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    height: 55vh;
+    height: 500px;
     width: 100%;
   }
   
@@ -91,6 +92,8 @@ $copper: #B87333;        // Медный
     flex-direction: row-reverse;
     gap: 20px;
     max-width: 80%;
+    height: 85%;
+
   }
   
   .roadmap_right {
@@ -101,13 +104,19 @@ $copper: #B87333;        // Медный
   }
   
   .cards-group-button {
+    display: flex;
+    justify-content: center;    // Горизонталь
+    align-items: center;        // Вертикаль
+    height: 100%;               // Убедиться, что блок тянется по высоте родителя
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 20px;         // Добавим немного отступа по бокам
     background: #eee;
     border-radius: 5px;
     text-align: center;
     transition: 0.3s;
-    
+    font-family: 'Mulish-Bold';
+    text-transform: uppercase;
+    font-size: 1rem;
   }
   
   .cards-group-button:hover, .cards-group-button.active {
@@ -124,8 +133,7 @@ $copper: #B87333;        // Медный
     width: 80vw;
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
-    // overflow: scroll;
-
+    height: 100%;
   }
   
   .roadmap_card {

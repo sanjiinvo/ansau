@@ -10,7 +10,7 @@ const Uniq =()=>{
 
 
     return(
-        <div className="uniq_ansau mt-3">
+        <div className="uniq_ansau">
             <div className="uniq_items">
             <PersonBoundingBox size={40} color="brown"/>
             <p className="uniq_items_tittle">FaceID</p>
@@ -24,23 +24,26 @@ const Uniq =()=>{
 
             <div className="uniq_items">
             <Stack size={40} color="brown"/>
-            <p className="uniq_items_tittle">Кирпичные <br/> стены </p>
+            <p className="uniq_items_tittle">9 этажей </p>
             </div>
 
             <div className="uniq_items">
             <BuildingsFill size={40} color="brown"/>
-            <p className="uniq_items_tittle">Кирпичные <br/> стены </p>
+            <p className="uniq_items_tittle">Количество<br/> квартир -  295 </p>
             </div>
 
             <div className="uniq_items ">
             <ArrowsVertical className="arrow-vert" size={42} color="brown"/>
-            <p className="uniq_items_tittle">Кирпичные <br/> стены </p>
+            <p className="uniq_items_tittle">Высота <br/> потолка - 3м </p>
             </div>
-
 
             <div className="uniq_items">
             <HouseCheckFill size={40} color="brown"/>
-            <p className="uniq_items_tittle">Фасад из <br/> фиброцементных панелей </p>
+            <p className="uniq_items_tittle">Облицовочный кирпич <br/> фиброцементных панелей </p>
+            </div>
+            <div className="uniq_items">
+            <HouseCheckFill size={40} color="brown"/>
+            <p className="uniq_items_tittle">Облицовочный кирпич <br/> фиброцементных панелей </p>
             </div>
 
         </div>
